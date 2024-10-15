@@ -1,0 +1,120 @@
+:root {
+  --color: #7ed214;
+  --transition: 1s ease;
+  --textcolor: #3e3e3e;
+  --downloadbtncolor: #00a129;
+  --backgroundcolor: #000000;
+  --bgcolor: #f5f5f5;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: var(--bgcolor);
+}
+
+.sdown-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.text-field {
+  width: 400px;
+  padding: 10px;
+  border: 5px solid var(--color);
+  outline: none;
+  background-color: transparent;
+}
+
+.submit-btn {
+  background-color: var(--color);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: var(--transition);
+}
+
+.result-container {
+  display: grid;
+  grid-template-columns: 256px 500px;
+  height: 144px;
+  width: 768px;
+  gap: 10px;
+  border: 1px solid #ccc;
+  transition: var(--transition);
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.video-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.video-title {
+  color: var(--textcolor);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.video-fmt-list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.video-fmt {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: baseline;
+  font-size: 16px;
+  color: var(--textcolor);
+  cursor: pointer;
+}
+
+.download-btn {
+  padding: 5px 10px;
+  background-color: var(--downloadbtncolor);
+  color: whitesmoke;
+  font-weight: 400;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
